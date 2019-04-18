@@ -98,6 +98,9 @@ body{
   font-size: 3.1vmax;
   font-weight: bold;
 }
+#logo {
+  text-align: center;
+}
 #cart {
   border: 1px solid #24b4b4;
   color: #24b4b4;
