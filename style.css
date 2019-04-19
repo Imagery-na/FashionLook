@@ -32,7 +32,7 @@ body{
   line-height: 1.33vmax;
 }
 .wrap {
-  width: 81.66vw;
+  width: 86.66vw;
   margin: 0 auto;
   position: relative;
 }
@@ -60,7 +60,7 @@ body{
 #sign{
   border: 1px solid #ededed;
   color: #fff;
-  font-size: 1.23vmax;
+  font-size: 1.03vmax;
   height: auto;
 }
 #sign:hover {
@@ -104,7 +104,7 @@ body{
 #cart {
   border: 1px solid #24b4b4;
   color: #24b4b4;
-  font-size: 1.23vmax;
+  font-size: 1.03vmax;
   height: auto;
 } /* когда будет время, добавить иконки! */
 #cart:hover {
@@ -158,3 +158,119 @@ nav a{
    min-height: 100%;
    max-width: 100%;
  }
+main{
+  padding: 2.16vmax 0;
+  margin-top: 3vmax;
+}
+#leftbar{
+  width: 19.16vw;
+}
+#rightbar{
+  width: 60.83vw;
+}
+.box{
+  border-radius: 0.33vw;
+  background-color: #fff;
+}
+#loadmore{
+  border:none;
+  width: 100%;
+  border-radius: 1px;
+  color: #fff;
+  background-color: #b8c6c7;
+  font-size: 1.25vmax;
+  padding: 1.66vmax;
+  margin: 1.66vmax 0;
+  cursor: pointer;
+}
+#loadmore:hover {
+  transform: scale(0.95);
+}
+.list_product{
+  flex-flow: row wrap;
+}
+.product{
+  flex-flow: column nowrap;
+  text-decoration: none;
+  padding: 1.66vmax 1.66vw;
+  width: 19.16vw;
+  height: 25vmax;
+  text-align:center;
+  margin-bottom: 1.66vmax;
+  margin-right: 1.66vw;
+  position: relative;
+}
+.product:nth-of-type(3n){
+  margin-right:0;
+}
+
+.product:hover{
+  transform: scale(1.05);
+}
+.img_product{
+  width: 100%;
+  height: 13.33vmax;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 0.1vmax;
+}
+.img_product img{
+  height: 100%;
+}
+.product h2{
+  font-size: 1.25vmax;
+  line-height: 1.5vmax;
+  text-align: center;
+  color: #3a3d3f;
+  font-weight: bold;
+}
+.product p:first-of-type{
+  text-align: center;
+  font-style: italic;
+  color: #838c8e;
+  font-size: 1vmax;
+  margin: 0 0.83vmax;
+}
+.price{
+  color: #3a3d3f;
+  font-size: 1vmax;
+  font-weight: bold;
+}
+.tag{
+  background-color: #84ce8b;
+  color: #fff;
+  padding: 0.31vmax;
+  font-size:0.73vmax;
+  position: absolute;
+  right:1.66vw;
+  top:1.66vmax;
+  z-index: 1;
+  letter-spacing:0.2vw;
+}
+.list_box{
+  width:100;
+}
+.title_box{
+  width:100;
+  height:4.16vmax;
+  padding: 0 1.66vmax;
+  border-bottom: #eee 1px solid;
+  cursor: pointer;
+  font-weight: bold;
+  color: #3c3d41;
+  letter-spacing: 0.1vw;
+}
+.title_box img{
+  width: 1vw;
+}
+.title_box.open img{
+  transform: rotate(90deg);
+}
+.list_link{
+  background-color: #838d8f;
+  padding: 1.66vmax;
+}
+.list_link a{
+  color: #daddde;
+  font-size: 
+}

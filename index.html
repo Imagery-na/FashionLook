@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Интернет-магазин</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery1.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -13,11 +15,11 @@
           <div class="flex_main flex_nowrap flex_aitem_center">
               <div id="sign" class="btn anime flex_main flex_nowrap flex_aitem_center flex_jcontent-between">
                  <img src="img/1.png">
-                 SIGN IN
+                 ВОЙТИ
               </div>
               <div id="location">
-                Location:
-                <span>RUSSIA</span>
+                Страна:
+                <span>РОССИЯ</span>
               </div>
           </div>
           <div id="logo">
@@ -25,12 +27,12 @@
           </div>
           <div class="flex_main flex_nowrap flex_aitem_center">
               <div id="currency">
-                Currency:
+                Валюта:
                 <span>US DOLLAR</span>
               </div>
               <div id="cart" class="btn anime flex_main flex_nowrap flex_aitem_center flex_jcontent-between">
                 <img src="img/2.png">
-                CART
+                КОРЗИНА
               </div>
           </div>
      </div>
@@ -38,15 +40,15 @@
     <div id="menu">
      <div class="wrap flex_main flex_nowrap flex_aitem-center flex_jcontent-center">
        <nav id="main_nav">
-         <li><a href="#" class="anime">MEN</a></li>
-         <li><a href="#"class="anime">WOMEN</a></li>
-         <li><a href="#"class="anime">GOODS</a></li>
-         <li><a href="#"class="anime">ACCESSORIES</a></li>
-         <li><a href="#"class="anime">BRANDS</a></li>
-         <li><a href="#"class="anime">BLOG</a></li>
+         <li><a href="#" class="anime">ОДЕЖДА</a></li>
+         <li><a href="#"class="anime">ОБУВЬ</a></li>
+         <li><a href="#"class="anime">ВЕРХНЯЯ ОДЕЖДА</a></li>
+         <li><a href="#"class="anime">АКСЕССУАРЫ</a></li>
+         <li><a href="#"class="anime">БРЕНДЫ</a></li>
+         <li><a href="#"class="anime">БЛОГ</a></li>
        </nav>
        <div id="search_button">
-         <img src="img/3.png">
+         <img src="img/3.png" alt="">
        </div>
      </div>
    </div>
@@ -54,5 +56,83 @@
 <div id="banner">
   <img src="img/Brand.png">
 </div>
+<main class="wrap flex_main flex_nowrap flex_aitem-start flex_jcontent-between">
+     <div id="leftbar">
+        <div id='category' class="box">
+            <div class="list_box">
+              <div class="title_box flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+                <p>ОДЕЖДА</p>
+                <img src="img/4.png">
+              </div>
+              <div class="list_link">
+                 <nav>
+                   <li><a href="#" class="anime">ПЛАТЬЯ</a></li>
+                   <li><a href="#"class="anime">БЛУЗКИ</a></li>
+                   <li><a href="#"class="anime">БРЮКИ</a></li>
+                   <li><a href="#"class="anime">ДЖИНСЫ</a></li>
+                   <li><a href="#"class="anime">ЮБКИ</a></li>
+                   <li><a href="#"class="anime">СВИТШОТЫ</a></li>
+                 </nav>
+              </div>
+            </div>
+        </div>
+     </div>
+     <div id="rightbar">
+        <div class="list_product flex_main flex_aitem-start flex_jcontent-start">
+            <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+                <div class="img_product">
+                  <img src="img/clothes1.png" alt="">
+                </div>
+                <h2>Бомбер</h2>
+                <p>Black Panther</p>
+                <p class="price">$290</p>
+            </a>
+            <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+                <div class="tag box">NEW</div>
+                <div class="img_product">
+                  <img src="img/clothes2.png" alt="">
+                </div>
+                <h2>Ветровка</h2>
+                <p>Mango</p>
+                <p class="price">$350</p>
+            </a>
+            <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+                <div class="img_product">
+                  <img src="img/clothes3.png" alt="">
+                </div>
+                <h2>Худи</h2>
+                <p>Fashion-professional</p>
+                <p class="price">$270</p>
+            </a>
+            <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+                <div class="tag box">NEW</div>
+                <div class="img_product">
+                  <img src="img/clothes4.png" alt="">
+                </div>
+                <h2>Кофта</h2>
+                <p>Burberries</p>
+                <p class="price">$180</p>
+            </a>
+            <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+                <div class="img_product">
+                  <img src="img/clothes5.png" alt="">
+                </div>
+                <h2>Толстовка</h2>
+                <p>Grey Wolf</p>
+                <p class="price">$220</p>
+            </a>
+            <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+                <div class="img_product">
+                  <img src="img/clothes6.png" alt="">
+                </div>
+                <h2>Бомбер</h2>
+                <p>Be yourself</p>
+                <p class="price">$290</p>
+            </a>
+        </div>
+        <button id="loadmore" class="anime" type="button">ЗАГРУЗИТЬ ЕЩЁ</button>
+     </div>
+</main>
+
 </body>
 </html>
