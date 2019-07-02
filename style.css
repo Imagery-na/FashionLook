@@ -268,9 +268,27 @@ main{
 }
 .list_link{
   background-color: #838d8f;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+}
+.list_link.open{
+  height:auto;
+  overflow: auto;
   padding: 1.66vmax;
 }
 .list_link a{
   color: #daddde;
-  font-size: 
+  font-size: 1.o8 vmax;
+  display: block;
+  width: 100%;
+}
+.list_link a:hover{
+  color: white;
+}
+.list_link li{
+  margin-bottom: 1.25vmax;
+}
+.list_link li:last-of-type{
+  margin-bottom: 0;
 }

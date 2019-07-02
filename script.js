@@ -1,8 +1,11 @@
-$(function(){
+$(function()
+{
   "use strict";
-  $('.title_box').click(function(){
-     $('.title_box').toggleClass('open');
-  })
+  $('.title_box').click(function()
+  {
+     $(this).toggleClass('open');
+     $(this).next('.list_link').toggleClass('open');
+  });
 
 
 });
