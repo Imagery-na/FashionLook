@@ -299,10 +299,33 @@ main{
 }
 .list_filter label{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   width: 2.66vmax;
   height: 2.66vmax;
   border-radius: 2.66vmax;
+  cursor: pointer;
+  background-color: #c4c9ca;
+}
+.list_filter li {
+  list-style: none;
+  margin-right: 0.66vw;
+  margin-bottom: 0.83vmax;
+}
+.list_filter li:nth-of-type(5n){
+  margin-right: 0;
+}
+.list_filter input[type="checkbox"]{
+  display: none;
+}
+.content_filter {
+  padding: 1.6vmax;
+}
+.color_list input[type=checkbox]:checked + label {
+  box-shadow: 0 0 2px 4px #707475;
+}
+input[type=checkbox]:checked + label {
+  background-color: #838d8f;
+  color: #fff;
 }
