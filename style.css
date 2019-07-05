@@ -342,3 +342,47 @@ input[type=checkbox]:checked + label {
 .price_box input:focus {
   outline: none;
 }
+footer{
+  width: 100%;
+  height: 20vmax;
+  background: #fff;
+  padding: 5vmax;
+}
+#footer_nav a{
+  color: #3c3d41;
+  font-weight: bold;
+  font-size: 1vmax;
+  margin: 2vmax;
+}
+#footer_nav a:hover {
+  text-decoration: underline;
+}
+#footer_nav{
+  margin-bottom: 3vmax;
+}
+#newsletter p{
+  color: #3c3d41;
+  margin-right: 2vmax;
+  font-weight: bold;
+  font-size: 1vmax;
+}
+#newsletter input{
+  border: none;
+  height: 2.66vmax;
+  width: 18.8vmax;
+  background-color: #eee;
+  font-size: 1vmax;
+  padding-left: 1.25vmax;
+  background-image: url(../img/mes.png);
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+  border-radius: 0.33vmax;
+}
+#soc_list img{
+  width: 3vmax;
+  height: 3vmax;
+  margin: 2vmax;
+}
+#soc_list li{
+  list-style: none;
+}
