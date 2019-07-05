@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Интернет-магазин</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="jquery1.js"></script>
+    <link href="css/base/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -146,7 +148,11 @@
                 <li><input id="black" type="checkbox"><label style="background-color: #000000"for="black"></label></li>
               </ul>
            </div>
-
+      </div>
+      <div class="filter_box box">
+           <div class="title_filter flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+              <p>РАЗМЕРЫ</p>
+           </div>
            <div class="content_filter">
               <ul class="list_filter flex_main flex_wrap 
               flex_jcontent-start flex_aitem-start">
@@ -157,7 +163,20 @@
                 <li><input id="size5" type="checkbox"><label for="size5">XL</label></li>
               </ul>
            </div>
-       </div>
+        </div>
+        <div class="filter_box box">
+            <div class="title_filter flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+               <p>ЦЕНА</p>
+            </div>
+            <div class="content_filter">
+              <div id="slider_price"></div>
+              <div class="price_box flex_main flex_nowrap flex_jcontent-between
+              flex_aitem-center">
+                  <input type="text" name="minPrice">
+                  <input type="text" name="maxPrice">
+              </div>
+            </div>
+        </div>
      
       </div>
      <div id="rightbar">
@@ -216,6 +235,30 @@
         <button id="loadmore" class="anime" type="button">ЗАГРУЗИТЬ ЕЩЁ</button>
      </div>
 </main>
+<footer>
+  <div class="wrap">
+    <div></div>
+        <nav id="footer_nav">
+          <li><a href="#">ИНФОРМАЦИЯ</a></li>
+          <li><a href="#">ПАРТНЁРАМ</a></li>
+          <li><a href="#">СКИДКИ</a></li>
+          <li><a href="#">ДОСТАВКА</a></li>
+          <li><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li>
+        </nav>    
+    <div id="newsletter">
+       <p>ПОДПИСАТЬСЯ НА РАССЫЛКУ</p>
+       <input type="text" placeholder="E-mail">
+    </div>
+    <div>
+        <ul id="soc_list" class="flex_main flex_nowrap flex_jcontent-center flex_aitem-center">
+         <li><a target="blank" href="#"></a></li>
+         <li><a target="blank" href="#"></a></li>
+         <li><a target="blank" href="#"></a></li>
+        </ul>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

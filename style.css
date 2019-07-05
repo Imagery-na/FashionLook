@@ -329,3 +329,16 @@ input[type=checkbox]:checked + label {
   background-color: #838d8f;
   color: #fff;
 }
+.price_box input{
+  margin-top: 1vmax;
+}
+.price_box input{
+  border: none;
+  font-size: 1.08vmax;
+  color: #707475;
+  text-align: center;
+  width: 30%;
+}
+.price_box input:focus {
+  outline: none;
+}
