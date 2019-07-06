@@ -97,6 +97,7 @@ body{
   color: #fff;
   font-size: 3.1vmax;
   font-weight: bold;
+  margin-top: 1%;
 }
 #logo {
   text-align: center;
@@ -106,7 +107,7 @@ body{
   color: #24b4b4;
   font-size: 1.03vmax;
   height: auto;
-} /* когда будет время, добавить иконки! */
+}
 #cart:hover {
   background-color: #24b4b4;
   color: #fff;
@@ -385,4 +386,47 @@ footer{
 }
 #soc_list li{
   list-style: none;
+}
+#cart_box{
+  position: fixed;
+  right: 0;
+  top:0;
+  height: 100vh;
+  z-index: 100;
+  background-color: #fff;
+  width: 35vw;
+  box-shadow: -8px 5px 20px 0px #3a3d3f;
+  transform: translateX(100%);
+  flex-flow: column nowrap;
+  border: 3px solid #24b4b4;
+}
+#cart_box.open{
+  transform: translateX(0);
+}
+.title_cart{
+  width: 100%;
+  height: 4vmax;
+  background-color: #24b4b4;
+  padding: 1vmax 1.5vmax;
+  color: white;
+  fill: white;
+  cursor: pointer;
+}
+.title_cart img{
+  height: 80%;
+}
+#order {
+  border: 1px solid #24b4b4;
+  font-size: 1.03vmax;
+  height: auto;
+  margin: 2vmax;
+  background-color: #24b4b4;
+  color: #fff;
+}
+#order img{
+  height: 2vmax;
+}
+#order:hover{
+  background-color: inherit;
+  color: #24b4b4;
 }
