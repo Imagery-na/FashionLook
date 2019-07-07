@@ -25,5 +25,13 @@ $(function()
   $('#cart, .title_cart').click(function(){
     $('#cart_box').toggleClass('open');
   });
-  
+  $('#sign').click(function(){
+    $('#black_fill').toggleClass('open');
+    $('#modal').toggleClass('open');
+  });
+  $('#close_mod, #black_fill').click(function(){
+    $('#black_fill').toggleClass('open');
+    $('#modal').toggleClass('open');
+  });
+
 });

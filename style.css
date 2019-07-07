@@ -416,7 +416,7 @@ footer{
   height: 80%;
 }
 #order {
-  border: 1px solid #24b4b4;
+  border: 1px solid #2e2e30;
   font-size: 1.03vmax;
   height: auto;
   margin: 2vmax;
@@ -429,4 +429,32 @@ footer{
 #order:hover{
   background-color: inherit;
   color: #24b4b4;
+}
+#black_fill{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #191818ba;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#modal{
+  position: fixed;
+  z-index: 102;
+  width: 40vw;
+  top: 45vh;
+  left: 30%;
+  background-color: white;
+  display: none;
+}
+#modal.open{
+  display: block !important;
+}
+#black_fill.open {
+  display: block !important;
+}
+#close_mod{
+  cursor: pointer;
 }
