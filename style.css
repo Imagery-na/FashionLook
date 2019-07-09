@@ -31,6 +31,12 @@ body{
   font-size: 1.14vmax;
   line-height: 1.33vmax;
 }
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
 .wrap {
   width: 86.66vw;
   margin: 0 auto;
@@ -443,10 +449,11 @@ footer{
 #modal{
   position: fixed;
   z-index: 102;
-  width: 40vw;
-  top: 45vh;
-  left: 30%;
-  background-color: white;
+  width: 30vw;
+  top: 35vh;
+  left: calc( 50% - 15vw ); -webkit-left: calc( 50% - 15vw );-ms-left: calc( 50% - 15vw );
+  border-radius: 0.33vw;
+  border: 1px solid white;
   display: none;
 }
 #modal.open{
@@ -456,5 +463,49 @@ footer{
   display: block !important;
 }
 #close_mod{
+  width: 2vmax;
+  height: 2vmax;
+  position: absolute;
+  top: -2vmax;
+  right: -2vmax;
   cursor: pointer;
+  z-index: 103;
+}
+#close_mod img{
+  width: 2vmax;
+  height: 2vmax;
+}
+#content_mod{
+  background-color: #fff;
+  padding: 1.5vw;
+  width: 100%;
+}
+.input{
+  width: 100%;
+  margin-bottom: 1vmax;
+}
+.input input{
+  width: 100%;
+  height: 3vmax;
+  text-align: center;
+  border-radius: 0.33vw;
+  border: 1px solid #ccc;
+  font-size: 1.1 vmsx;
+}
+.submit{
+  width: 100%;
+  padding: 1vmax;
+  background-color: #24b4b4;
+  color: #fff;
+  border-radius: 0.33vw;
+  border: 1px solid #ccc;
+}
+.submit:hover{
+  background-color: #3c3d41;
+}
+.submit:focus, .submit:active{
+  background-color: #3c3d41;
+  border: 3px solid #fff;
+  border-radius: 0.33vw;
+  outline: none;
 }
