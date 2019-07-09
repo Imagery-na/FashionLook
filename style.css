@@ -485,10 +485,11 @@ footer{
   background-color: #fff;
   padding: 1.5vw;
   width: 100%;
+  text-align: center;
 }
 .input{
   width: 100%;
-  margin-bottom: 1vmax;
+  margin: 1vmax 0;
 }
 .input input{
   width: 100%;
