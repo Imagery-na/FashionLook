@@ -31,7 +31,7 @@ body{
   font-size: 1.14vmax;
   line-height: 1.33vmax;
 }
-button:active, button:focus {
+button:active, button:focus, input:active, input:focus {
   outline: none !important;
 }
 button::-moz-focus-inner {
@@ -146,13 +146,19 @@ nav a{
    color: #fff;
    background-color:  #3c3d41;
  }
- #search_button img{
+ #search_button{
    position: absolute;
    cursor: pointer;
    right: 0;
    width: 2.5vmax;
    height: 2.5vmax;
-   top:1vmax;
+ }
+ #search_button img{
+   width: inherit;
+   height: inherit;
+ }
+ #search_button img:hover{
+   padding: 0.3vmax;
  }
  #banner{
    width: 100%;
@@ -509,3 +515,26 @@ footer{
   border-radius: 0.33vw;
   outline: none;
 }
+#search_panel{
+  position: absolute;
+  z-index: 5;
+  width: 96%;
+  height: inherit;
+  padding: 1vmax;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: none;
+}
+#search_panel input{
+  width: 100%;
+  border: 1px solid #707475;
+  padding: 0.4vmax;
+  font-size: 1vmax;
+  height: 2.2vmax;
+  padding-left: 1vmax;
+}
+#search_panel.open{
+  display: block !important;
+}
+
