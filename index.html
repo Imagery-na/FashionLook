@@ -7,7 +7,7 @@
     <link href="css/base/jquery-ui-1.9.2.custom.css" rel="stylesheet">
     <script src="js/jquery-1.8.3.js"></script>
     <script src="js/jquery-ui-1.9.2.custom.js"></script>
-    <script src="script.js"></script>
+    
 </head>
 <body>
 
@@ -34,6 +34,7 @@
      <p>МОЯ КОРЗИНА</p>
      <img src="img/next.png">
    </div>
+   <div>Общая сумма: <span class='price_total'>0</span></div>
    <div class="content_cart"></div>
    <div id="order" class="btn anime flex_main flex_nowrap flex_aitem_center flex_jcontent-between">
      ЗАКАЗАТЬ
@@ -62,6 +63,7 @@
                 <span>US DOLLAR</span>
               </div>
               <div id="cart" class="btn anime flex_main flex_nowrap flex_aitem_center flex_jcontent-between">
+                <p class="counter"></p>
                 <img src="img/2.png">
                 КОРЗИНА
               </div>
@@ -213,16 +215,17 @@
      
       </div>
      <div id="rightbar">
-        <div class="list_product flex_main flex_aitem-start flex_jcontent-start">
-            <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+        <div class="list_product flex_main flex_aitem-start flex_jcontent-start">           
+               <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
                 <div class="img_product">
                   <img src="img/clothes1.png" alt="">
                 </div>
                 <h2>Бомбер</h2>
                 <p>Black Panther</p>
                 <p class="price">$290</p>
-            </a>
-            <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
+                <button class="btn">Добавить в корзину</button>
+              </a>
+              <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
                 <div class="tag box">NEW</div>
                 <div class="img_product">
                   <img src="img/clothes2.png" alt="">
@@ -230,7 +233,8 @@
                 <h2>Ветровка</h2>
                 <p>Mango</p>
                 <p class="price">$350</p>
-            </a>
+                <button class="btn">Добавить в корзину</button>
+              </a>
             <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
                 <div class="img_product">
                   <img src="img/clothes3.png" alt="">
@@ -238,6 +242,7 @@
                 <h2>Худи</h2>
                 <p>Fashion-professional</p>
                 <p class="price">$270</p>
+                <button class="btn">Добавить в корзину</button>
             </a>
             <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
                 <div class="tag box">NEW</div>
@@ -247,6 +252,7 @@
                 <h2>Кофта</h2>
                 <p>Burberries</p>
                 <p class="price">$180</p>
+                <button class="btn">Добавить в корзину</button>
             </a>
             <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
                 <div class="img_product">
@@ -255,6 +261,7 @@
                 <h2>Толстовка</h2>
                 <p>Grey Wolf</p>
                 <p class="price">$220</p>
+                <button class="btn">Добавить в корзину</button>
             </a>
             <a class="product box anime flex_main flex_nowrap flex_jcontent-between flex_aitem-center">
                 <div class="img_product">
@@ -263,6 +270,7 @@
                 <h2>Бомбер</h2>
                 <p>Be yourself</p>
                 <p class="price">$290</p>
+                <button class="btn">Добавить в корзину</button>
             </a>
         </div>
         <button id="loadmore" class="anime .reset_style" type="button">ЗАГРУЗИТЬ ЕЩЁ</button>
@@ -292,6 +300,6 @@
     </div>
   </div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

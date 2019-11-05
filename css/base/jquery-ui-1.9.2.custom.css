@@ -199,6 +199,12 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 .ui-spinner-up { top: 0; }
 .ui-spinner-down { bottom: 0; }
 
+.ui-slider-handle:active, .ui-slider-handle:focus{
+	background-color: white !important;
+	border: #707475 solid 2px !important;
+	outline: none !important;
+  }
+
 /* TR overrides */
 .ui-spinner .ui-icon-triangle-1-s {
 	/* need to fix icons sprite */
