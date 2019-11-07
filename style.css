@@ -172,7 +172,7 @@ nav a{
  }
  #banner img{
    min-height: 100%;
-   max-width: 100%;
+   width: 100%;
  }
 #leftbar{
   width: 19.16vw;
@@ -384,7 +384,7 @@ footer{
   color: #3c3d41;
   font-weight: bold;
   font-size: 1vmax;
-  margin: 2vmax;
+  margin: 1vmax;
 }
 #footer_nav a:hover {
   text-decoration: underline;
@@ -576,7 +576,7 @@ footer{
 }
 @media (max-width: 600px){
   body{
-    font-size: 1.54vmax;
+    font-size: 2vmax;
     line-height: 1.33vmax;
   }
   main{
@@ -628,5 +628,37 @@ footer{
   #main_nav a{
     font-size: 1.15vmax;
   }
+  #location, #currency, #menu{
+    display: none;
+  }
+  #category, .title_filter{
+    font-size: 2.5vmax !important;
+  }
+  .title_box, .title_filter{
+    height:6.16vmax;
+  }
+  #banner{
+    height: 14vmax;
+  }
+  .list_filter label{
+    width: 7vw;
+    height: 7vw;
+    border-radius: 7vw;
+  }
+  .price_box input{
+    font-size: 4.5vw !important;
+  }
+  #footer_nav{
+    display: none;
+  }
+  #newsletter input, #newsletter p{
+    font-size: 2.3vw;
+  }
+  #soc_list img{
+    width: 6vw;
+    height: 6vw;
+    margin: 4vw;
+  }
 }
+
 
