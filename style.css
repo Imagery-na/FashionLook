@@ -432,7 +432,6 @@ footer{
   height: 100vh;
   z-index: 100;
   display: flex; display: -webkit-box;display: -ms-flexbox;display:-webkit-flex;
-  align-items:center;-webkit-align-items:center;-ms-align-items:center;
   justify-content:space-between;-webkit-justify-content:space-between;-ms-justify-content:space-between;
   background-color: #fff;
   width: 30vw;
@@ -447,12 +446,12 @@ footer{
 }
 .title_cart{
   width: 100%;
-  height: 5vmax;
+  height: 9vh;
   display: flex; display: -webkit-box;display: -ms-flexbox;display:-webkit-flex;
   align-items:center;-webkit-align-items:center;-ms-align-items:center;
   justify-content:space-between;-webkit-justify-content:space-between;-ms-justify-content:space-between;
   background-color: #24b4b4;
-  padding: 1vmax 1.5vmax;
+  padding: 1vh 1.5vw;
   color: white;
   fill: white;
   cursor: pointer;
@@ -467,7 +466,7 @@ footer{
   border: 1px solid #2e2e30;
   font-size: 1.03vmax;
   height: auto;
-  margin: 1vmax;
+  margin: 1vw;
   background-color: #24b4b4;
   color: #fff;
 }
@@ -494,6 +493,7 @@ footer{
   width: 40vw;
   top: 30vh;
   left: calc( 50% - 20vw ); -webkit-left: calc( 50% - 20vw );-ms-left: calc( 50% - 20vw );
+  background-color: #fff;
   border-radius: 0.33vw;
   border: 1px solid white;
   display: none;
@@ -518,7 +518,6 @@ footer{
   height: 2vmax;
 }
 #content_mod{
-  background-color: #fff;
   padding: 1.5vw;
   width: 100%;
   text-align: center;
@@ -685,6 +684,17 @@ footer{
     width: 100vw;
     font-size: 5vh;
     font-weight: bold;
+  }
+  #cart_box{
+    width: 100vw !important;
+  }
+  #modal{
+    padding: 2vh 0;
+    width: 90vw !important;
+    left: 3vw;
+  }
+  #content_mod{
+    height: 100% !important;
   }
 }
 
