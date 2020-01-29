@@ -74,13 +74,8 @@ $(function()
   $('input[name="maxPrice"]').val( 
       $('#slider_price').slider('values', 1) );
 
-  $('#cart').click(function(){ //открытие окна корзины и регистрации
+  $('#cart, #order, .title_cart').click(function(){ //открытие окна корзины и регистрации
     $('#cart_box').toggleClass('open');
-    document.body.style.overflow = 'hidden';
-  });
-  $('#order, .title_cart').click(function(){ //открытие окна корзины и регистрации
-    $('#cart_box').toggleClass('open');
-    document.body.style.overflow = '';
   });
   $('#sign').click(function(){
     $('#black_fill').toggleClass('open');

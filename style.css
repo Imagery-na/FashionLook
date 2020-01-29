@@ -284,7 +284,7 @@ nav a{
   letter-spacing: 0.1vw;
 }
 .title_box img{
-  width: 1vw;
+  height: 35%;
 }
 .title_box.open img{
   transform: rotate(90deg);
@@ -432,6 +432,7 @@ footer{
   height: 100vh;
   z-index: 100;
   display: flex; display: -webkit-box;display: -ms-flexbox;display:-webkit-flex;
+  align-items:center;-webkit-align-items:center;-ms-align-items:center;
   justify-content:space-between;-webkit-justify-content:space-between;-ms-justify-content:space-between;
   background-color: #fff;
   width: 30vw;
@@ -441,12 +442,15 @@ footer{
   border: 3px solid #24b4b4;
   overflow: auto;
 }
+#cart_box p{
+  margin: 2vmax;
+}
 #cart_box.open{
   transform: translateX(0);
 }
 .title_cart{
   width: 100%;
-  height: 9vh;
+  height: 9%;
   display: flex; display: -webkit-box;display: -ms-flexbox;display:-webkit-flex;
   align-items:center;-webkit-align-items:center;-ms-align-items:center;
   justify-content:space-between;-webkit-justify-content:space-between;-ms-justify-content:space-between;
@@ -455,6 +459,7 @@ footer{
   color: white;
   fill: white;
   cursor: pointer;
+  margin-bottom: 2vh;
 }
 .title_cart img{
   height: 80%;
@@ -573,7 +578,7 @@ footer{
 #search_panel.open{
   display: block !important;
 }
-@media (max-width: 400px){
+@media (max-width: 500px){
   body{
     font-size: 2vmax;
     line-height: 1.33vmax;
@@ -624,6 +629,9 @@ footer{
     padding: 0.5vw 1.1vw;
     font-size: 2vmax;
   }
+  .product .btn{
+    padding: 1vh 1.5vw;
+  }
   #main_nav a{
     font-size: 1.15vmax;
   }
@@ -664,7 +672,7 @@ footer{
   #sign, #cart{
     position: absolute;
     bottom: 0;
-    font-size: 3vw;
+    font-size: 3.2vw;
   }
   #sign img, #cart img{
     width: 6vw;
@@ -682,7 +690,8 @@ footer{
     top: 1vh;
     height: 6vh;
     width: 100vw;
-    font-size: 5vh;
+    letter-spacing: 0.5vw;
+    font-size: 5.2vh;
     font-weight: bold;
   }
   #cart_box{
@@ -695,6 +704,13 @@ footer{
   }
   #content_mod{
     height: 100% !important;
+  }
+  #order {
+    font-size: 2vh;
+    height: 3vh;
+  }
+  #loadmore{
+    font-size: 2vmax;
   }
 }
 
